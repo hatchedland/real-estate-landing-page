@@ -3,7 +3,6 @@ import { Navbar } from './components/navbar/Navbar'
 import { Gallery } from './sections/Gallery'
 import { Footer } from './sections/Footer'
 import { Home } from './sections/Home'
-import { SiteVisit } from './sections/SiteVisit'
 import { Overview } from './sections/Overview'
 import { Contact } from './sections/Contact'
 import { Amenities } from './components/amenities/Amenities'
@@ -12,6 +11,8 @@ import { MsitePlan } from './sections/MsitePlan'
 import { FloorPlan } from './sections/FloorPlan'
 import { FAQs } from './sections/FAQs'
 import { Features } from './sections/Features'
+import { LocationAdvantages } from './sections/LocationAdvantages'
+import { KeyHighlights } from './sections/KeyHighlights'
 
 
 function App() {
@@ -22,15 +23,15 @@ function App() {
       <Home />
       <Features />
       <Overview />
+      <KeyHighlights />
       <Amenities />
       <Location />
       <Contact />
       <MsitePlan />
-      <FloorPlan />
-      <Gallery />
-      {/* <SiteVisit /> */}
-      {/* <SiteVisit /> */}
-      <FAQs />
+      <LocationAdvantages />
+      {/* <FloorPlan /> */}
+      {/* <Gallery /> */}
+      {/* <FAQs /> */}
       <Footer />
     </div>
   )

@@ -4,12 +4,12 @@ import { PageTitle } from '../components/title/PageTitle'
 
 export const FloorPlan = () => {
   return (
-    
-      <div className='bg-black text-white'>
-    <div className='max-w-xl md:max-w-3xl lg:max-w-5xl mx-auto px-5 lg:px-10 py-10' id='floor-plan'>
+
+    <section className='bg-black text-white' id='floor-plan'>
+      <div className='max-w-xl md:max-w-3xl lg:max-w-5xl mx-auto px-5 lg:px-10 py-24 lg:py-32'>
         <PageTitle title="Floor Plan" tagline="Choose Your Ideal Space, Discover Plans!" />
         <Tabs />
-    </div>
       </div>
+    </section>
   )
 }

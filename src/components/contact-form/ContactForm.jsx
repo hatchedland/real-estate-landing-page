@@ -9,20 +9,21 @@ export const ContactForm = () => {
   });
 
   const firebaseurl = 'https://real-estate-website-form-default-rtdb.firebaseio.com/UserData.json';
-
-  // Rest of your component
-
+  // const firebaseurl = process.env.REACT_APP_FIREBASE_URL;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setUser({ ...user, [name]: value });
   };
 
+  const handleOptionChange = (option) => {
+    setUser({ ...user, Message: option });
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const { Name, Number, Message } = user;
-
 
     const options = {
       method: 'POST',
@@ -45,9 +46,8 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto">
+    <div className="max-w-xl">
       <PageTitle title="Contact us" tagline="Ready to Make Dreams Reality? Lets Connect" />
-
       <form method="POST">
         {['Full Name', 'Contact Number'].map((field) => (
           <div key={field} className="mb-4">
@@ -69,18 +69,23 @@ export const ContactForm = () => {
 
         <div className="mb-4">
           <label htmlFor="message" className="block text-gray-200 font-bold">
-            Enter your Query
+            Select Unit
           </label>
-          <input
-            type="text"
-            id="message"
-            name="Message"
-            className="mt-1 p-2 w-full h-40 mt-4 p-2 w-full focus:outline-none bg-black border-b-2 border-gray-600"
-            placeholder="What do you want to ask about"
-            value={user.Message}
-            onChange={handleChange}
-          />
-
+          <div className="mt-4 flex gap-5">
+            {['4 BHK','3BHK', '2BHK', '1 BHK'].map((option) => (
+              <div key={option} className="mb-2">
+                <input
+                  type="radio"
+                  id={option.toLowerCase()}
+                  name="messageOption"
+                  value={option}
+                  checked={user.Message === option}
+                  onChange={() => handleOptionChange(option)}
+                />
+                <label htmlFor={option.toLowerCase()} className="ml-2 text-white">{option}</label>
+              </div>
+            ))}
+          </div>
         </div>
 
         <button
