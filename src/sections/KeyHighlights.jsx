@@ -44,7 +44,7 @@ export const KeyHighlights = () => {
                             <img
                                 src={highlight.image}
                                 alt={highlight.title}
-                                className="w-100 h-full object-cover max-w-sm"
+                                className="w-full h-full object-cover max-w-sm"
                             />
                             <div className='p-2 max-w-sm'>
                                 <h3 className="text-2xl font-bold mb-2">{highlight.title}</h3>

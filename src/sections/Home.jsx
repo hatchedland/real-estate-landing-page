@@ -25,13 +25,13 @@ export const Home = () => {
     <div id='home' className='bg-cover bg-center flex items-center text-white' style={containerStyle}>
       <div className='-my-20 px-5 lg:px-10 flex flex-col gap-6  justify-center h-full w-full' style={overlayStyle}>
         <div className='max-w-7xl flex flex-col mx-auto w-full'>
-        <div className='text-3xl font-bold'>SNN Estate's</div>
-        <div className='text-6xl lg:text-8xl font-extrabold'>Felicity Residences</div>
+        <div className='text-2xl md:text-3xl font-bold'>SNN Estate's</div>
+        <div className='text-4xl md:text-6xl lg:text-8xl font-extrabold'>Felicity Residences</div>
         <div>
-          <div className='flex gap-6 text-3xl justify-start'>
+          <div className='flex gap-6 text-2xl md:text-3xl justify-start'>
           Happiness Begin at Home</div>
 
-          <div className='flex gap-2 pt-20 justify-start text-2xl'>
+          <div className='flex gap-2 pt-20 justify-start md:text-2xl'>
             <div><MapPin /></div>
             <div>Behind Manyata Tech Park, Rachenahalli, North Benguluru</div>
           </div>
