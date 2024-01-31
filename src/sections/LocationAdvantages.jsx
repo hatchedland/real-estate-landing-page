@@ -54,8 +54,8 @@ const advantages = [
 
 export const LocationAdvantages = () => {
   return (
-    <section className="py-10 px-5 lg:px-10 py-32 lg:py-40 border-t bg-gray-100" id='location-perks'>
-      <div className="container mx-auto  max-w-6xl">
+    <section className="py-10 py-32 lg:py-40 border-t bg-gray-100" id='location-perks'>
+      <div className="mx-auto max-w-7xl px-5 lg:px-10">
         <PageTitle title="Location Advantages" tagline="Elevating Your Lifestyle, One Step at a Time." />
         <div className="flex flex-col gap-10">
           {advantages.map((category) => (

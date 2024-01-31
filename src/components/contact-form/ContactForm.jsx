@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { PageTitle } from "../title/PageTitle";
 
+import fecility_brochure from '../../assets/felicity-brochure.pdf'
+
 export const ContactForm = () => {
+
   const [user, setUser] = useState({
     Name: '',
     Number: '',
@@ -9,7 +12,6 @@ export const ContactForm = () => {
   });
 
   const firebaseurl = 'https://real-estate-website-form-default-rtdb.firebaseio.com/UserData.json';
-  // const firebaseurl = process.env.REACT_APP_FIREBASE_URL;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -71,18 +73,19 @@ export const ContactForm = () => {
           <label htmlFor="message" className="block text-gray-200 font-bold">
             Select Unit
           </label>
-          <div className="mt-4 flex gap-5">
-            {['4 BHK','3BHK', '2BHK', '1 BHK'].map((option) => (
-              <div key={option} className="mb-2">
+          <div className="mt-4 flex gap-10 items-center flex-wrap">
+            {['4 BHK','3 BHK', '2 BHK', '1 BHK'].map((option) => (
+              <div key={option} className="mb-2 flex items-center">
                 <input
                   type="radio"
+                  className="h-6 w-6 transform scale-120 cursor-pointer"
                   id={option.toLowerCase()}
                   name="messageOption"
                   value={option}
                   checked={user.Message === option}
                   onChange={() => handleOptionChange(option)}
                 />
-                <label htmlFor={option.toLowerCase()} className="ml-2 text-white">{option}</label>
+                <label htmlFor={option.toLowerCase()} className="ml-2 text-white font-bold">{option}</label>
               </div>
             ))}
           </div>
