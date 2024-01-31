@@ -32,7 +32,7 @@ export const Amenities = () => {
 
   return (
     <section className='text-white bg-black' id='amenities'>
-      <div className='py-24 lg:py-32 px-5 lg:px-10  max-w-7xl mx-auto'>
+      <div className='py-32 lg:py-40 px-5 lg:px-10  max-w-7xl mx-auto'>
         <PageTitle title='Amenities' tagline='Elevate Your Lifestyle, Discover Amenities!' />
         <div>
           {Object.entries(categories).map(([category, amenities]) => (

@@ -5,7 +5,7 @@ export const Contact = () => {
   return (
 
     <div className=' bg-black text-white'>
-      <div className='py-24 lg:py-32 px-5 lg:px-10 max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 justify-center' id='contact'>
+      <div className='py-32 lg:py-40 px-5 lg:px-10 max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 justify-center' id='contact'>
         <div className='flex-grow max-w-2xl'><ContactForm /></div>
         <div className='hidden lg:block flex-grow max-w-2xl'>
           <img

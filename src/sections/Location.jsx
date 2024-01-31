@@ -5,7 +5,7 @@ import { NavigatorAlt } from 'iconoir-react'
 
 export const Location = () => {
   return (
-    <div className='py-24 lg:py-32 px-5 lg:px-10 flex flex-col lg:flex-row  justify-center gap-10' id='location'>
+    <div className='py-32 lg:py-40 px-5 lg:px-10 flex flex-col lg:flex-row  justify-center gap-10' id='location'>
       <div className='flex-grow relative overflow-hidden w-full max-w-2xl'>
         <MapEmbed />
       </div>

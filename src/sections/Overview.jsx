@@ -9,7 +9,7 @@ export const Overview = () => {
     alert('Brochure will be shared once we connect');
   }
   return (
-    <section id='overview' className='py-24 lg:py-32 px-5 lg:px-10 max-w-7xl mx-auto'>
+    <section id='overview' className='py-32 lg:py-40 px-5 lg:px-10 max-w-7xl mx-auto'>
       <div className='flex flex-col lg:flex-row w-full justify-center gap-10'>
         <div className='lg:w-1/2 flex-grow flex flex-col gap-10'>
           <div>

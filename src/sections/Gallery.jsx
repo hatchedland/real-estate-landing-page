@@ -51,7 +51,7 @@ export const Gallery = () => {
     };
 
     return (
-        <section id="gallery" className='px-5 lg:px-10 py-24 lg:py-32 mx-auto max-w-7xl'>
+        <section id="gallery" className='px-5 lg:px-10 py-32 lg:py-40 mx-auto max-w-7xl'>
             <PageTitle title="Gallery" tagline="Visualize the Beauty That Awaits!" />
             <div>
                 <section className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 justify-center">

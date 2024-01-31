@@ -35,7 +35,7 @@ export const KeyHighlights = () => {
 
     return (
         <div className='border-t bg-gray-100'>
-            <section className='px-5 lg:px-10 py-24 lg:py-32 max-w-7xl mx-auto' id='key-highlights'>
+            <section className='px-5 lg:px-10 py-32 lg:py-40 max-w-7xl mx-auto' id='key-highlights'>
                 <PageTitle title="Key Highlights" tagline="Something important" />
 
                 <div className="flex flex-wrap gap-10">
