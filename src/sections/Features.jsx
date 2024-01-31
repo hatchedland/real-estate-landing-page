@@ -3,8 +3,8 @@ import React from 'react';
 export const Features = () => {
   return (
     <section className='px-5 lg:px-10 py-10 text-white bg-black'>
-      <div className=" mx-auto  max-w-7xl">
-        <div className="flex flex-wrap justify-around">
+      <div className=" mx-auto max-w-7xl">
+        <div className="flex flex-wrap justify-between">
           <div className=" px-4 mb-6 w-100">
             <div className="p-4">
               <h1 className="text-lg lg:text-xl font-bold text-gray-400">TOTAL AREA</h1>
