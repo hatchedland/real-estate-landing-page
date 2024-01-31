@@ -12,9 +12,9 @@ export const Navbar = () => {
 
 
   return (
-    <div>
+    <div className=' fixed w-full z-50'>
       <nav className="bg-white border-gray-200 dark:bg-white">
-        <div className="flex flex-wrap justify-between items-center my-auto mx-auto max-w-screen-xl p-4">
+        <div className="flex flex-wrap justify-between items-center my-auto mx-auto max-w-screen-xl p-1">
           <a href="#home" className="flex items-center space-x-3 rtl:space-x-reverse border">
             <img src={logo} className="h-14" alt="SNN Felicity Logo" />
           </a>

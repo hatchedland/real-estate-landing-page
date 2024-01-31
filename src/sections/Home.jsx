@@ -24,7 +24,7 @@ export const Home = () => {
   return (
     <div id='home' className='bg-cover bg-center flex items-center text-white' style={containerStyle}>
       <div className='-my-20 px-5 lg:px-10 flex flex-col gap-6  justify-center h-full w-full' style={overlayStyle}>
-        <div className='max-w-7xl mx-auto'>
+        <div className='max-w-7xl flex flex-col mx-auto w-full'>
         <div className='text-3xl font-bold'>SNN Estate's</div>
         <div className='text-6xl lg:text-8xl font-extrabold'>Felicity Residences</div>
         <div>
