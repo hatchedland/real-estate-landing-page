@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { PageTitle } from '../components/title/PageTitle';
 import { SectionTitle } from '../components/title/SectionTitle';
-import { ImageModal } from '../components/gallery/ImageModal';
+import { ImageModal } from '../components/modal/ImageModal';
 
 export const Gallery = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);

@@ -7,25 +7,31 @@ export const Features = () => {
         <div className="flex flex-wrap justify-between">
           <div className=" px-4 mb-6 w-100">
             <div className="p-4">
-              <h1 className="text-lg lg:text-xl font-bold text-gray-400">TOTAL AREA</h1>
+              <h1 className="text-lg lg:text-xl font-bold opacity-75">TOTAL AREA</h1>
               <h3 className="text-3xl lg:text-4xl">6.5 Acre</h3>
             </div>
           </div>
           <div className=" px-4 mb-6 w-100">
             <div className="p-4">
-              <h1 className="text-lg lg:text-xl font-bold text-gray-400">NO. OF UNITS</h1>
+              <h1 className="text-lg lg:text-xl font-bold opacity-75">NO. OF UNITS</h1>
               <h3 className="text-3xl lg:text-4xl">580 Units</h3>
             </div>
           </div>
           <div className=" px-4 mb-6 w-100">
             <div className="p-4">
-              <h1 className="text-lg lg:text-xl font-bold text-gray-400">STRUCTURE</h1>
-              <h3 className="text-3xl lg:text-4xl">2B+G+13 FLOORS | <br /> 9 TOWERS</h3>
+              <h1 className="text-lg lg:text-xl font-bold opacity-75">ELEVATION</h1>
+              <h3 className="text-3xl lg:text-4xl"> 9 TOWERS</h3>
+            </div>
+          </div>
+          <div className=" px-4 mb-6 w-100">
+            <div className="p-4">
+              <h1 className="text-lg lg:text-xl font-bold opacity-75">STRUCTURE</h1>
+              <h3 className="text-3xl lg:text-4xl">2B+G+13 FLOORS</h3>
             </div>
           </div>
           <div className="px-4 mb-6 w-100">
             <div className="p-4">
-              <h1 className="text-lg lg:text-xl font-bold text-gray-400">POSSESSION</h1>
+              <h1 className="text-lg lg:text-xl font-bold opacity-75">POSSESSION</h1>
               <h3 className="text-3xl lg:text-4xl">2028</h3>
             </div>
           </div>

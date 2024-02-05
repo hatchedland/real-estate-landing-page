@@ -2,12 +2,10 @@ import React from 'react';
 import { PageTitle } from '../components/title/PageTitle';
 
 // imported images
-import miyo from '../assets/key-features/miyawaki-inspired.png'
-import bay_balcony from '../assets/key-features/bay-balcony.png'
-import high_rental from '../assets/key-features/high-rental.png'
-import festive from '../assets/key-features/festive.png'
-
-
+import miyo from '../assets/key-features/miyawaki-inspired.png';
+import bay_balcony from '../assets/key-features/bay-balcony.png';
+import high_rental from '../assets/key-features/high-rental.png';
+import festive from '../assets/key-features/festive.png';
 
 export const KeyHighlights = () => {
     const highlights = [
@@ -36,25 +34,29 @@ export const KeyHighlights = () => {
     return (
         <div className='border-t bg-gray-100'>
             <section className='px-5 lg:px-10 py-32 lg:py-40 max-w-7xl mx-auto' id='key-highlights'>
-                <PageTitle title="Key Highlights" tagline="Something important" />
+                <PageTitle title='Key Highlights' tagline='Discover Distinctive Living' />
 
-                <div className="flex flex-wrap gap-10">
-                    {highlights.map((highlight, index) => (
-                        <div key={index} className="flex flex-col p-5 bg-white">
-                            <img
-                                src={highlight.image}
-                                alt={highlight.title}
-                                className="w-full h-full object-cover max-w-sm"
-                            />
-                            <div className='p-2 max-w-sm'>
-                                <h3 className="text-2xl font-bold mb-2">{highlight.title}</h3>
-                                <p className="text-gray-600">{highlight.description}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
+                <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10'>
+  {highlights.map((highlight, index) => (
+    <div className='flex flex-col' key={index}>
+      <div
+      className="relative h-96 bg-cover bg-center group"
+      style={{ backgroundImage: `url(${highlight.image})` }}
+    ></div>
+      <div className='flex items-end justify-end z-10'>
+        <div className='bg-gray-100 p-5 w-fit -mt-20 max-w-md'>
+          <h3 className='font-play text-4xl mb-2 opacity-75'>{highlight.title}</h3>
+          <p className='border-gray-200 py-2 h-fit bg-opacity-75'>{highlight.description}</p>
         </div>
+      </div>
+    </div>
+  ))}
+</div>
 
+            </section>
+
+
+
+        </div>
     );
 };
